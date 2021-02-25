@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Räkna summan av två heltal</p>
+
+<button onclick="myFunction()">Räkna ut</button>
+
+<br/>
+<br/>
+
+     Mata in ett heltal: <input type="text" id="text1" name="tal1">
+
+     <br/>
+     
+     Mata in ett heltal: <input type="text" id="text2" name="tal2">
+
+     <p id="test"></p>
+
+       <script>
+
+        function myFunction()
+        {
+
+         var y = document.getElementById("text1").value;
+         var z = document.getElementById("text2").value;
+         var x = parseInt(y) + parseInt(z); document.getElementById("test").innerHTML = x;
+
+        }
+
+      </script>
+
+</body>
+</html>
