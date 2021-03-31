@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <script>
+  function multiplyBy()
+
+  {
+
+  	 förstaNumret = document.getElementById("förstaNumret").value;
+  	   andraNumret = document.getElementById("andraNumret").value;
+  	     document.getElementById("result").innerHTML = förstaNumret*andraNumret;
+
+  }
+
+  function divideBy()
+
+  {
+
+  	 förstaNumret = document.getElementById("förstaNumret").value;
+       andraNumret = document.getElementById("andraNumret").value;
+       	 document.getElementById("result").innerHTML = förstaNumret/andraNumret;
+  }
+
+  </script>
+
+
+<form>
+
+ 1:a talet: <input type="text" id="förstaNumret" /><br>
+ 2:a talet: <input type="text" id="andraNumret" /><br>
+
+ <input type="button" onClick="multiplyBy()" Value="Multiplicera" />
+ <input type="button" onClick="divideBy()" Value="Dela" />
+
+</form>
+
+<p>Produkten/kvoten blir = <span id = "result"></span><br></p>
+
+
+
+</body>
+</html>
